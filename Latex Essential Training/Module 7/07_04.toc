@@ -1,0 +1,14 @@
+\contentsline {part}{I\hspace {1em}First Part}{5}
+\contentsline {chapter}{Preface}{7}
+\contentsline {chapter}{\numberline {1}First main chapter}{9}
+\contentsline {section}{\numberline {1.1}A section}{9}
+\contentsline {section}{\numberline {1.2}Another section}{9}
+\contentsline {subsection}{\numberline {1.2.1}A smaller section}{9}
+\contentsline {subsubsection}{Deeper level}{9}
+\contentsline {chapter}{\numberline {2}Second main chapter}{11}
+\contentsline {part}{II\hspace {1em}Second part}{13}
+\contentsline {chapter}{\numberline {3}Third main chapter}{15}
+\vspace \bigskipamount 
+\contentsline {part}{Appendix}{17}
+\contentsline {chapter}{\numberline {A}Glossary}{17}
+\contentsline {chapter}{\numberline {B}Symbols}{19}
