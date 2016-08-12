@@ -31,12 +31,33 @@ $\frac{x}{y}$
 
 
 \subsection{Overline}
-\begin{math}
-	s = overline{AB}
-\end{math}
+$s = \overline{AB}$
 
-\subsection{Greek Letters}
-$\alpha > \beta$
+\subsection{Underline}
+$N = \underline{1+1+\ldots+1}$
+
+\subsection{Math Symbol}
+$\approx, \infty,  \downarrow, \leftarrow, \rightarrow, \arcsin, \arccos, \tan$
+
+\subsection{Greek Letters: Lower Case}
+$\gamma > \delta$
+
+\subsection{Greek Letters 2: Upper Case}
+$\Gamma > \Delta$
+
+\subsection{Script Letters}
+$\mathcal{A}, \mathcal{B}, \mathcal{C}$
+
+\subsection{Ellipsis}
+$\ldots, \ddots, \vdots, \cdots, \cdot$
+
+\subsection{Math Fonts}
+$\mathrm{a, b, c}$ \\
+$\mathit{a,b,c}$     \\
+$\mathbf{a,b,c}$
+
+\subsection{Setting Accent}
+$\hat{a}, \bar{a}, \dot{a}, \ddot{b}, \grave{c}, \acute{d}, \widehat{ABC}$
 
 
 \subsection{Summation 1}
@@ -51,25 +72,100 @@ $\prod_{i=1}^n{x_i}$
 \subsection{Integration}
 $\int_0^{\inf} e^{-x^2}dx$
 
+\subsection{Binomial Coefficients}
+$\binom{n}{k} = \frac{n!}{k!(n-k)!}$
+
+\subsection{Equation Environment}
 \begin{equation}
 a^2 + b^2 = c^2
+\label{peq}
 \end{equation}
 
+The above Equation \ref{peq} is the celebrated Pythagorean equation. 
+
+\subsection{Multiline Formula}
+\begin{multline}
+\sum_i^n x_i = x_1 + x_2 + x_3 + x_4 \\ + 
+\ldots + x_{n-2} + x_{n-1} + x_n
+\end{multline}
+
+\subsection{Aligning Equation}
+\subsubsection{With Numbering}
+\begin{align}
+x_1 + x_2 + x_3 &= 5 \\
+x_1 + 2x_2 & = 9 \\
+x_2 + 5x_3 & = 11
+\end{align}
+
+\subsubsection{Without Numbering}
+\begin{align*}
+x_1 + x_2 + x_3 &= 5 \\
+x_1 + 2x_2 & = 9 \\
+x_2 + 5x_3 & = 11
+\end{align*}
+
+
+
+\subsection{Gathering equation}
+\begin{gather}
+x_1 + x_2 + x_3 = 5 \\
+x_1 + 2x_2  = 9 \\
+x_2 + 5x_3  = 11
+\end{gather}
+
+\subsection{array}
+Same as table, only difference being the contents are typeset in math font
 \begin{equation}
-\begin{array}{ccc}
-a & = & b \\
-c & = & d  \\
-e & = & f
+\begin{array}{|ccc|}
+a & b & c \\
+d & e & f  \\
+g & g & i
 \end{array}
 \end{equation}
 
-
+\subsection{Matrix}
+\subsubsection{Plain Matrix}
 \begin{equation}
+M = 
 \begin{matrix}
 	a & b & c \\
 	d & e & f \\
 	g & h & i 
 \end{matrix}
 \end{equation}
+
+
+\subsubsection{Bracketed Matrix}
+\begin{equation}
+M = 
+\begin{bmatrix}
+	a & b & c \\
+	d & e & f \\
+	g & h & i 
+\end{bmatrix}
+\end{equation}
+
+\subsubsection{Parenthsised Matrix}
+\begin{equation}
+M = 
+\begin{pmatrix}
+	a & b & c \\
+	d & e & f \\
+	g & h & i 
+\end{pmatrix}
+\end{equation}
+
+
+\subsubsection{Vertical line Matrix}
+\begin{equation}
+M = 
+\begin{vmatrix}
+	a & b & c \\
+	d & e & f \\
+	g & h & i 
+\end{vmatrix}
+\end{equation}
+
+
 
 
