@@ -1,0 +1,39 @@
+\section{Figures Referencing}
+
+\subsection{Figure Referencing examples}
+Here are the examples of figure referencing. \\
+See Figure: \ref{unmodfig} for including as-is figure \\
+See Figure: \ref{scaledFig} for including scaled figure \\
+See Figure: \ref{mlwFig} for changing the width and the height of 
+a figure \\
+See Figure: \ref{rotFig} for including rotated figure \\
+
+
+
+\subsection{Including Figure without any modification}
+\begin{figure}[!htbp]
+\includegraphics{"machineLearning"}
+\caption[Unmodified Figure]{Including figure without any modification}
+\label{unmodfig}
+\end{figure}
+
+\begin{figure}[!htbp]
+\subsection{Including Figure with scaling}
+\includegraphics[scale = 0.5]{"machineLearning"}
+\caption[Scaled Figure]{Figure scaled 50\% compared to the original figure}
+\label{scaledFig}
+\end{figure}
+
+\begin{figure}[!htbp]
+\subsection{Including Figure with specified width and height}
+\includegraphics[width=5cm, height=6cm]{"machineLearning"}
+\caption[Modified length and width of the figure]{Figure dimensions set within }
+\label{mlwFig}
+\end{figure}
+
+\begin{figure}[!htbp]
+\subsection{Including rotated Figure}
+\includegraphics[angle=180]{"machineLearning"}
+\caption[Rotated Figure]{Rotated Figure}
+\label{rotFig}
+\end{figure}

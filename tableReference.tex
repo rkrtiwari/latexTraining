@@ -1,0 +1,96 @@
+\section{Referencing table}
+
+%\subsection{Generate list of tables}
+%\listoftables
+
+\subsection{Referencing Table using ref command}
+See Table: \ref{simpTable} to look at the example of a simple table \\
+See Table: \ref{hlTable} to look at the table where rows are separated by lines \\
+See Table: \ref{vlTable} to look at the table where columns are separated by lines\\
+See Table: \ref{cltTable} to look at the table where the  thickness of the
+lines that separate the rows have been customized\\
+See Table: \ref{mcTable} to look at the table where the  thickness of the
+lines that separate the rows have been customized\\
+
+
+\newpage
+\subsection{Simple Table}
+
+\begin{table}[!htbp]
+\begin{tabular}{ccc}
+a & b & c \\
+1 & 2 & 3 \\
+2 & 3 & 4
+\end{tabular}
+\caption[Simple Table]{A simple table}
+\label{simpTable}
+\end{table}
+
+
+\subsection{Adding horizontal line to the table}
+
+\begin{table}[!htbp]
+\begin{tabular}{ccc}
+\hline
+a & b & c \\
+\hline
+1 & 2 & 3 \\
+2 & 3 & 4\\
+\hline
+\end{tabular}
+\caption[Row separation]{A table where rows are separated by lines}
+\label{hlTable}
+\end{table}
+
+
+
+\subsection{Adding vertical line to the table}
+\begin{table}[!htbp]
+\begin{tabular}{|c|c|c|}
+\hline
+a & b & c \\
+\hline
+1 & 2 & 3 \\
+2 & 3 & 4\\
+\hline
+\end{tabular}
+\caption[Column Separation]{A table where columns are separated by lines}
+\label{vlTable}
+\end{table}
+
+\subsection{Customizing the thickness of the lines dividing the rows}
+\begin{table}[!htbp]
+\begin{tabular}{ccc}
+\toprule[1.5pt]
+a & b & c \\
+\midrule[1.0pt]
+1 & 2 & 3 \\
+2 & 3 & 4\\
+\bottomrule[1.5pt]
+\end{tabular}
+\caption[Customize line thickness]{A table where the thickness of the lines separating the rows has been customized}
+\label{cltTable}
+\end{table}
+
+\newpage
+\subsection{Merging Cells}
+\begin{table}[!htbp]
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+a & \multicolumn{2}{c}{b} & c\\
+\hline
+ & b1 & b2 & \\
+\hline
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+\end{tabular}
+\caption[Merge cells]{A table where some of the rows contain merged columns}
+\label{mcTable}
+\end{center}
+\end{table}
+
+
+
+
+
