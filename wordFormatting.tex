@@ -23,9 +23,34 @@ The following command can be used to change the font sizes: \verb+{\tiny text}+,
 You can also choose the font size using \verb+\fontsize{<size>}{<line space>}+ command.
 For example. {\fontsize{2cm}{2.5cm}{\selectfont This is big}}
 
+\subsection{Changing font side by defining an environment}
+\begin{huge}
+All the word have been typed inside huge environment. No wonder the words are huge!!!
+\end{huge}
+
+\subsection{Centering Text}
+\begin{center}
+Everything will be centered. \\
+As these lines are typed inside center environment
+\end{center}
+
+\subsection{Paragraph in a box}
+\parbox{2.5cm}{TUG is an acronym. It means \TeX{} users Group.}
+
+
 \subsection{Font type}
 To use a sans-serif font use the command: \verb+\textsf{text}+
 For example, the word after this: \textsf{have been written in sans-serif font}
+
+\subsection{Quote}
+Niels Bohr said: ``An expert is a person who has made all the mistakes that can be made in a very narrow field''.
+Albert Eienstein said:
+\begin{quote}
+Anyone who has never made a mistake has never tried anything new
+\end{quote}
+Errors are inevitable. So, let's be brave trying something new.
+
+
 
 \subsection{Start a new line}
 To start a new line, \newline use the command: \verb+{\newline}+. You can also use \verb+ {\\}+
